@@ -46,8 +46,8 @@ export default function Nav() {
                 />
             </div>
             <div className={`absolute top-0 left-0 w-full bg-white  list-none 
-                    p-7 flex flex-col gap-8 transform translate-y-[-100%]  max-md:hidden
-                ${showNav ? 'translate-y-[0%] shadow-2xl': ''} transition-all text-center `}>
+                    p-7 flex flex-col gap-8 transform translate-y-[-100%]  
+                ${showNav ? 'translate-y-[0%] shadow-2xl': ''} transition-all text-center  min-[1024px]:hidden`}>
                     {navLinks.map((item) =>(
                         <li key={item.label} className='hover:scale-110 transform transition-all font-bold'>
                             <a href={item.href}
@@ -58,8 +58,8 @@ export default function Nav() {
                             </a>
                         </li>
                     ))}
-                    <img className='hidden 
-                    max-lg:block cursor-pointer absolute right-7 top-7'
+                    <img className=' 
+                     cursor-pointer absolute right-7 top-7'
                     src={close} 
                     alt="close"
                     width={20}
