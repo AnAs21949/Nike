@@ -4,7 +4,7 @@ import { navLinks } from '../constants'
 import { useState } from 'react'
 
 export default function Nav() {
-    const [showNav, setShowNav] = useState(true)
+    const [showNav, setShowNav] = useState(false)
     const navHandler = () =>{
         setShowNav(prev => !prev)
         console.log(showNav)
@@ -46,7 +46,7 @@ export default function Nav() {
                 />
             </div>
             <div className={`absolute top-0 left-0 w-full bg-white  list-none 
-                    p-7 flex flex-col gap-8 transform translate-y-[-100%] 
+                    p-7 flex flex-col gap-8 transform translate-y-[-100%]  max-md:hidden
                 ${showNav ? 'translate-y-[0%] shadow-2xl': ''} transition-all text-center `}>
                     {navLinks.map((item) =>(
                         <li key={item.label} className='hover:scale-110 transform transition-all font-bold'>
