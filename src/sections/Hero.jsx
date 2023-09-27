@@ -23,7 +23,7 @@ export default function Hero() {
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px]
          font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap
-          relative z-10  pr-10 ">The New Arrival</span>
+          relative z-10  pr-10 ">The New </span>
           <br />
           <span className="text-coral-red inline-block mt-3">Nike 
           </span> Shoes 
